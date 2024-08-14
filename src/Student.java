@@ -25,12 +25,15 @@ public class Student {
     }
 
     public static void main(String[] args) {
-
+      // first initialize object with reference s1 , it will search with help of constructor variable stored into heap memory
         Student s1 = new Student(123,"Asma");
+        // second initialize object with reference s2 , it will search with help of constructor variable stored into heap memory
         Student s2 = new Student(456,"Fayza");
 
+        // it will call the static method which already variable declared and save into method name is "Sheridan" already occupy memory there
         Student.changeName();
 
+        // call with reference of object  to the specific method
         s1.display(s1.name, s1.id, "");
         s2.display(s2.name, s2.id, "");
 
